@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .wrapper {
+          width: 100%;
+          max-width: 1656px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+        .header {
+          background-color: #ede3d8;
+          padding: 20px 0;
+        }
+        .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+        .nav-links {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+        }
+        @media (max-width: 991px) {
+          .nav-links {
+            display: none;
+          }
+        }
+        .nav-link {
+          text-decoration: none;
+          color: #30a9e0;
+          text-transform: uppercase;
+          font: 700 10px "Inter", sans-serif;
+        }
+        .nav-link-active {
+          color: #006add;
+        }
+        .logo {
+          width: 167px;
+          height: 85px;
+        }
+        .logo-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .nav-links-right {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+        }
+        @media (max-width: 991px) {
+          .nav-links-right {
+            display: none;
+          }
+        }
+        .social-link {
+          display: flex;
+          align-items: center;
+        }
+        .mobile-menu {
+          display: none;
+          background: none;
+          border: none;
+          color: #30a9e0;
+          font-size: 24px;
+          cursor: pointer;
+        }
+        @media (max-width: 991px) {
+          .mobile-menu {
+            display: block;
+          }
+        }
+        .hero {
+          display: flex;
+          background-color: #006add;
+          position: relative;
+        }
+        @media (max-width: 991px) {
+          .hero {
+            flex-direction: column;
+          }
+        }
+        .hero-content {
+          flex: 1;
+          padding: 100px 60px;
+          color: #ede3d8;
+        }
+        @media (max-width: 991px) {
+          .hero-content {
+            padding: 60px 20px;
+          }
+        }
+        .hero-heading {
+          margin-bottom: 40px;
+          font: 400 53px/1.2 "Inter", sans-serif;
+        }
+        @media (max-width: 640px) {
+          .hero-heading {
+            font-size: 36px;
+          }
+        }
+        .underline {
+          background: linear-gradient(180deg, transparent 97%, #ede3d8 97%);
+        }
+        .hero-description {
+          margin-bottom: 40px;
+          color: #fff;
+          font: 16px/1.5 "Inter", sans-serif;
+        }
+        .highlight {
+          color: #f5e176;
+          font-weight: 700;
+        }
+        .cta-button {
+          padding: 26px 43px;
+          background-color: #f26a43;
+          color: #fafafa;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          transform: rotate(-5deg);
+          font: 700 19px "Inter", sans-serif;
+        }
+        .hero-image {
+          flex: 1;
+        }
+        .hero-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .mission {
+          background-color: #ede3d8;
+          padding: 100px 0;
+          text-align: center;
+        }
+        .mission-heading {
+          color: #006add;
+          max-width: 932px;
+          margin: 0 auto 40px;
+          font: 44px "Inter", sans-serif;
+        }
+        @media (max-width: 640px) {
+          .mission-heading {
+            font-size: 32px;
+          }
+        }
+        .mission-description {
+          color: #3a3b3c;
+          max-width: 662px;
+          margin: 0 auto 40px;
+          font: 16px "Inter", sans-serif;
+        }
+        .highlight-2 {
+          color: #f26a43;
+          font-weight: 700;
+        }
+        .mission-button {
+          padding: 26px 43px;
+          background-color: #f26a43;
+          color: #fafafa;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          border-radius: 20px;
+          transform: rotate(5deg);
+          font: 700 18px "Inter", sans-serif;
+        }
+        .story-img {
+          width: 100%;
+          height: auto;
+        }
+        .about {
+          background-color: #ede3d8;
+          padding: 100px 0;
+        }
+        .about-content {
+          display: flex;
+          gap: 100px;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+        @media (max-width: 991px) {
+          .about-content {
+            padding: 60px 20px;
+          }
+        }
+        @media (max-width: 640px) {
+          .about-content {
+            flex-direction: column;
+            gap: 40px;
+          }
+        }
+        .about-image {
+          flex: 1;
+        }
+        .about-img {
+          width: 100%;
+          height: auto;
+        }
+        .about-text {
+          flex: 1;
+          padding-top: 50px;
+        }
+        .about-description {
+          color: #006add;
+          margin-bottom: 40px;
+          font: 17px/1.5 "Inter", sans-serif;
+        }
+        .about-button {
+          padding: 26px 43px;
+          background-color: #1ac469;
+          color: #fafafa;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          transform: rotate(-5deg);
+          font: 700 19px "Inter", sans-serif;
+        }
+        .services {
+          background-color: #ede3d8;
+          padding: 100px 0;
+          text-align: center;
+        }
+        .services-heading {
+          color: #30a9e0;
+          margin-bottom: 60px;
+          font: 53px "Inter", sans-serif;
+        }
+        .services-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 50px;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+        @media (max-width: 991px) {
+          .services-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+        }
+        .service-card {
+          text-align: center;
+        }
+        .service-icon {
+          width: 70px;
+          height: auto;
+          margin-bottom: 30px;
+        }
+        .service-title {
+          color: #006add;
+          margin-bottom: 20px;
+          font: 700 20px "Inter", sans-serif;
+        }
+        .service-description {
+          color: #006add;
+          font: 16px/1.5 "Inter", sans-serif;
+        }
+        .services-button {
+          padding: 26px 43px;
+          background-color: #f26a43;
+          color: #fafafa;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          transform: rotate(-5deg);
+          margin-top: 60px;
+          font: 700 19px "Inter", sans-serif;
+        }
+        .support {
+          background-color: #ede3d8;
+          padding: 100px 0;
+        }
+        .support-content {
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 20px;
+          text-align: center;
+        }
+        .support-heading {
+          color: #ede3d8;
+          margin-bottom: 40px;
+          font: 44px "Inter", sans-serif;
+        }
+        @media (max-width: 640px) {
+          .support-heading {
+            font-size: 32px;
+          }
+        }
+        .support-description {
+          color: #ede3d8;
+          max-width: 386px;
+          margin: 0 auto 40px;
+          font: 16px/1.5 "Inter", sans-serif;
+        }
+        .support-buttons {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+        }
+        .support-button {
+          padding: 26px 43px;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          font: 700 19px "Inter", sans-serif;
+        }
+        .support-button-get-involved {
+          background-color: #f26a43;
+          color: #fafafa;
+        }
+        .support-button-donate {
+          background-color: #1ac469;
+          color: #fafafa;
+        }
+        .support-image {
+          margin-top: 60px;
+        }
+        .support-img {
+          width: 100%;
+          max-width: 631px;
+          height: auto;
+          margin: 0 auto;
+        }
+        .contact {
+          background-color: #006add;
+          padding: 100px 0;
+          text-align: center;
+        }
+        .contact-heading {
+          color: #fafafa;
+          max-width: 583px;
+          margin: 0 auto 40px;
+          font: 53px "Inter", sans-serif;
+        }
+        @media (max-width: 640px) {
+          .contact-heading {
+            font-size: 32px;
+          }
+        }
+        .contact-text {
+          color: #fafafa;
+          margin-bottom: 40px;
+          font: 18px "Inter", sans-serif;
+        }
+        .contact-button {
+          padding: 26px 43px;
+          background-color: #30a9e0;
+          color: #fafafa;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          border-radius: 20px;
+          transform: rotate(5deg);
+          font: 700 18px "Inter", sans-serif;
+        }
+        .footer {
+          background-color: #f26a43;
+        }
+        .footer-top {
+          padding: 60px 0;
+          text-align: center;
+          color: #ede3d8;
+        }
+        .footer-heading {
+          margin-bottom: 20px;
+          font: 400 43px "Inter", sans-serif;
+        }
+        .footer-description {
+          margin-bottom: 40px;
+          font: 16px "Inter", sans-serif;
+        }
+        .footer-form {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+        @media (max-width: 991px) {
+          .footer-form {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        .footer-input {
+          padding: 14px;
+          border: 1px solid #ede3d8;
+          background: transparent;
+          color: #ede3d8;
+          width: 230px;
+          font: 700 17px "Inter", sans-serif;
+        }
+        @media (max-width: 991px) {
+          .footer-input {
+            width: 100%;
+            max-width: 300px;
+          }
+        }
+        .footer-submit {
+          padding: 14px 17px;
+          border: 1px solid #ede3d8;
+          background: transparent;
+          color: #ede3d8;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+          cursor: pointer;
+          font: 700 19px "Inter", sans-serif;
+        }
+        @media (max-width: 991px) {
+          .footer-submit {
+            width: 100%;
+            max-width: 300px;
+          }
+        }
+        .footer-middle {
+          background-color: #fafafa;
+          padding: 60px 0;
+        }
+        .footer-nav {
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 20px;
+          display: flex;
+          justify-content: space-between;
+        }
+        .footer-links {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        .footer-link {
+          color: #30a9e0;
+          text-decoration: none;
+          font: 700 15px "Inter", sans-serif;
+        }
+        .footer-link-contact {
+          background-color: #006add;
+          color: #fafafa;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+        .footer-logo {
+          margin: 40px 0;
+        }
+        .footer-logo-img {
+          width: 249px;
+          height: 203px;
+        }
+        .footer-links-right {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        .footer-link-donate {
+          background-color: #f26a43;
+          color: #fafafa;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+        .footer-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          max-width: 1440px;
+          margin: 40px auto 0;
+          padding: 0 20px;
+          border-top: 1px solid #006add;
+          padding-top: 40px;
+        }
+        @media (max-width: 640px) {
+          .footer-info {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+          }
+        }
+        .footer-contact {
+          color: #30a9e0;
+          font: 16px/2 "Inter", sans-serif;
+        }
+        .footer-legal {
+          color: #30a9e0;
+          font: 16px/2 "Inter", sans-serif;
+        }
+        .social-icon {
+          width: 21px;
+          height: 21px;
+        }
+        .footer-bottom {
+          background-color: #006add;
+          padding: 30px 0;
+          text-align: center;
+        }
+        .copyright {
+          color: #fff;
+          font: 700 13px "Inter", sans-serif;
+        }
+        .copyright-link {
+          color: #fff;
+          text-decoration: underline;
+        }
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+      </style>
+      
+      <div class="wrapper">
+        <header class="header">
+          <nav class="nav">
+            <div class="nav-links">
+              <a href="#" class="nav-link nav-link-active">HOME</a>
+              <a href="#" class="nav-link">WHAT WE DO</a>
+              <a href="#" class="nav-link">ABOUT US</a>
+            </div>
+            <div class="logo">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/07bdb369773eec97fbd17b73d2b6a8e2bac97477" alt="Logo" class="logo-img">
+            </div>
+            <div class="nav-links-right">
+              <a href="#" class="nav-link">LATEST NEWS</a>
+              <a href="#" class="nav-link">CONTACT</a>
+              <a href="#" class="nav-link">DONATE</a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg class="social-icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.1088 15.58V11.2988H12.5463L12.765 9.64252H11.1088V8.58002C11.1088 8.11127 11.2338 7.76752 11.9213 7.76752H12.7963V6.26752C12.64 6.23627 12.1088 6.20502 11.515 6.20502C10.2338 6.20502 9.35876 6.98627 9.35876 8.39252V9.64252H7.95251V11.2988H9.39001V15.58H11.1088Z" fill="#006ADD"/>
+                </svg>
+              </a>
+            </div>
+            <button class="mobile-menu" aria-label="Toggle menu">
+              <i class="ti ti-menu-2"></i>
+            </button>
+          </nav>
+        </header>
+        <main>
+          <section class="hero">
+            <div class="hero-content">
+              <h1 class="hero-heading">
+                <span>We</span>
+                <span class="underline">break the cycle</span>
+                <span>of</span>
+                <span>poverty for children, one</span>
+                <span class="underline">education</span>
+                <span>at a time.</span>
+              </h1>
+              <p class="hero-description">
+                <span>Every child deserves an education, but not every child can afford one.</span>
+                <span class="highlight">World For Everyone Children's Education</span>
+                <span>was established to help change that.</span>
+              </p>
+              <a href="#" class="cta-button">what we do</a>
+            </div>
+            <div class="hero-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2df8d8151e36f463a72e3c9bab08d81946fdcf02" alt="Children in education" class="hero-img">
+            </div>
+          </section>
+          <section class="mission">
+            <h2 class="mission-heading">We believe that every child in our world deserves access to a primary and secondary education.</h2>
+            <p class="mission-description">
+              <span class="highlight-2">World For Everyone Children's Education</span>
+              <span>was established to change the statistic that over 260 million children around our world are not attending school.</span>
+            </p>
+            <a href="#" class="mission-button">about us</a>
+          </section>
+          <section>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d31cbdec547b7428c234eda1177eb3a83ae3d882" alt="Our story" class="story-img">
+          </section>
+          <section class="about">
+            <div class="about-content">
+              <div class="about-image">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bbb41f6455b88e5c41c64dd71cc7d8f64e15df07" alt="About us" class="about-img">
+              </div>
+              <div class="about-text">
+                <p class="about-description">
+                  We were founded by Chitra World For Everyone Wright, a certified teacher with 30+ years of experience in public and private schools in the United States. Throughout her career, she saw firsthand how the intervention of early schooling makes a huge difference in the future of a child's life. Our story is founded on the premise that learning to read opens up a child's life to a whole new experience of living.
+                </p>
+                <a href="#" class="about-button">OUR STORY</a>
+              </div>
+            </div>
+          </section>
+          <section class="services">
+            <h2 class="services-heading">What We Do</h2>
+            <div class="services-grid">
+              <div class="service-card">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5004ea8aa41930ae491984e352d3bbfae7a9be5b" alt="Tuition assistance" class="service-icon">
+                <h3 class="service-title">PROVIDE TUITION ASSISTANCE</h3>
+                <p class="service-description">
+                  We have elementary and secondary students in need of tuition assistance. They can be supported for a year at a time, where donor's funds will cover tuition, books, uniforms, and two hot meals on school days.
+                </p>
+              </div>
+              <div class="service-card">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9879e8478cf273f64e815f942246aa184a6f1e70" alt="School facilities" class="service-icon">
+                <h3 class="service-title">SUPPORT SCHOOL FACILITIES</h3>
+                <p class="service-description">
+                  We provide financial support for school facilities' building and repair. Currently, we are working to build permanent classrooms for Bethany Joy Education Center (one of the schools we support).
+                </p>
+              </div>
+              <div class="service-card">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/35ebaf4cca8ec0bd8417a976ab020ef26b2a08a0" alt="Education materials" class="service-icon">
+                <h3 class="service-title">PROVIDE EDUCATION MATERIALS</h3>
+                <p class="service-description">
+                  We help provide school materials needed to aid the education process. This includes books, pencils, notebooks, and more.
+                </p>
+              </div>
+            </div>
+            <a href="#" class="services-button">Our Services</a>
+          </section>
+          <section class="support">
+            <div class="support-content">
+              <h2 class="support-heading">Want to support us?</h2>
+              <p class="support-description">
+                You can support us through financial donations or by requesting to come along to volunteer with us. Follow the link below to learn more about ways to become part of changing children's lives!
+              </p>
+              <div class="support-buttons">
+                <a href="#" class="support-button support-button-get-involved">get involved</a>
+                <a href="#" class="support-button support-button-donate">donate</a>
+              </div>
+            </div>
+            <div class="support-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/db61a935f5bce7af7c763ce20628aa7f9e83e294" alt="Support us" class="support-img">
+            </div>
+          </section>
+          <section class="contact">
+            <h2 class="contact-heading">Connect with World For Everyone Children's Education</h2>
+            <p class="contact-text">
+              <span>Email us at </span>
+              <strong>info@World For Everyonechildren.org</strong>
+              <span> or fill out a contact form below:</span>
+            </p>
+            <a href="#" class="contact-button">contact</a>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer-top">
+            <h2 class="footer-heading">Stay Connected</h2>
+            <p class="footer-description">Join our mailing list to be the first to read our news and updates.</p>
+            <form class="footer-form">
+              <label for="firstName" class="visually-hidden">First Name</label>
+              <input type="text" id="firstName" placeholder="First Name" class="footer-input" required>
+              <label for="lastName" class="visually-hidden">Last Name</label>
+              <input type="text" id="lastName" placeholder="Last Name" class="footer-input" required>
+              <label for="email" class="visually-hidden">Email Address</label>
+              <input type="email" id="email" placeholder="Email Address" class="footer-input" required>
+              <button type="submit" class="footer-submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-middle">
+            <nav class="footer-nav">
+              <div class="footer-links">
+                <a href="#" class="footer-link">HOME</a>
+                <a href="#" class="footer-link">WHAT WE DO</a>
+                <a href="#" class="footer-link">ABOUT US</a>
+                <a href="#" class="footer-link footer-link-contact">CONTACT</a>
+              </div>
+              <div class="footer-logo">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6c5e2e9f78d79a284b1e947902b7fdd00fff6d5c" alt="Footer logo" class="footer-logo-img">
+              </div>
+              <div class="footer-links-right">
+                <a href="#" class="footer-link">OUR TEAM</a>
+                <a href="#" class="footer-link">GET INVOLVED</a>
+                <a href="#" class="footer-link">LATEST NEWS</a>
+                <a href="#" class="footer-link footer-link-donate">DONATE NOW</a>
+              </div>
+            </nav>
+            <div class="footer-info">
+              <div class="footer-contact">
+                <p>(425) 941-9202</p>
+                <p>info@World For Everyonechildren.org</p>
+              </div>
+              <a href="#" aria-label="Facebook">
+                <svg class="social-icon" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.2825 20.3154V11.7529H15.1575L15.595 8.44043H12.2825V6.31543C12.2825 5.37793 12.5325 4.69043 13.9075 4.69043H15.6575V1.69043C15.345 1.62793 14.2825 1.56543 13.095 1.56543C10.5325 1.56543 8.78247 3.12793 8.78247 5.94043V8.44043H5.96997V11.7529H8.84497V20.3154H12.2825Z" fill="#30A9E0"/>
+                </svg>
+              </a>
+              <div class="footer-legal">
+                <p>World For Everyone Children's Education</p>
+                <p>is a 501(c)(3) non-profit organization.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="copyright">
+              <span>© 2024 WORLD FOR EVERYONE CHILDREN'S EDUCATION — WEBSITE MADE BY </span>
+              <a href="#" class="copyright-link">SERETH DESIGN</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

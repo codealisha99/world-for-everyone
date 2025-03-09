@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../world for everyone-backend"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "worldforeveryone"
+	}
+}
