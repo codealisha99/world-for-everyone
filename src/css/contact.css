@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --cream-color: #F9E5C7 ;     /* Background color - you can adjust this */
+    --cream-color:   ;     /* Background color - you can adjust this */
    
   }
    body{
@@ -136,25 +136,25 @@ body{
     text-align: center;
 }
 .submit-button {
-    background-color: #00408c;
-    color: white;
+    background-color: transparent;
+    color: #00408c;
     height: 35px;
     width: 95%;
-    border: none;
+    border: 2px solid #00408c;
     font-weight: bolder;
     cursor: pointer;
     display: inline-block;
     /* justify-content: center; */
     /* align-items: center; */
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-    transform-origin: center;
+    /* transition: transform 0.3s ease-in-out;
+    transform-origin: center; */
     /* margin-left: 0 auto ; */
     /* text-align:center; */
 }
 
 .submit-button:hover {
     transform: rotate(3deg);
-    background: green;
+    
 }
 
 
@@ -186,6 +186,7 @@ a{
     text-decoration: none;
 }
 .title{
+    background: #F9E5C7;
     display: inline-block;
     justify-content: left;
     padding-top: 150px;

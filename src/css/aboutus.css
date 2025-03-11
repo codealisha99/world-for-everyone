@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}.nav231{
+    display: flex;
+    /* display: inline-block; */
+    background-color: #00408c;
+    display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: 0 20px;
+    
+    
+    /* rgb(46, 46, 144) */
+    color: white;
+    font: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-between;
+    height: 21vh;
+
+
+}
+        
