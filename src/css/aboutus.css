@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }.nav231{
     display: flex;
     /* display: inline-block; */
@@ -25,4 +26,97 @@
 
 
 }
+.container1{ 
+    display: flex;
+    height: 100vh;
+    
+    max-width: 100%;
+    background: white;
+    overflow: hidden;
+    
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+   
+  
+
+}
+.text-section{
+    display: flex;
+    width: 50%;
+    flex: 1;
+    background-color: #00408c;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.text-setion p{
+    margin: 0;
+
+}
+.image-section{
+    display: flex;
+    width: 50%;
+    flex: 1;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 20px; */
+    background-size: cover;
+}
+.image-section img {
+    max-width: 100%;
+    
+    height: auto;
+    
+}
+.our-values{
+            position: relative;
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('/asset/mountain.jpg') no-repeat center center/cover;
+            transition: background 0.5s ease-in-out;
+}
+.emotions {
+    position: absolute;
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    color: black;
+    font-weight: bold;
+}
+.emotion:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: underline wavy rgb(228, 228, 119);
+    
+
+}
+.our-founders{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background: repeating-linear-gradient(
+        -45deg,
+        #fff 0px,
+        #fff 10px,
+        #00408c 10px,
+        #00408c 25px
+     );
+}
+
+  
+  
+  
+
         
