@@ -3,306 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watumull Children's Education</title>
+    <title>Board of Directors</title>
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
-        /* Global Styles */
-        * {
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f7f1e9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            padding: 20px 0;
-            border-bottom: 1px solid #e5d9c9;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
             text-align: center;
         }
 
-        .logo img {
-            width: 50px;
-            height: auto;
+        .board-section {
+            padding: 50px 20px;
         }
 
-        .logo h1 {
-            color: #0e52c1;
+        .board-section h2 {
             font-size: 2rem;
-            margin-top: 5px;
         }
 
-        .logo p {
-            color: #5a8ccc;
-            font-size: 0.9rem;
+        .board-description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: left;
         }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav li {
-            margin: 0 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #0e52c1;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #f26342;
-        }
-
-        .social-icons a {
-            color: #0e52c1;
-            margin-left: 15px;
-            font-size: 1.2rem;
-        }
-
-        /* Main Content Styles */
-        .main-content {
+        /* Swiper Container */
+        .swiper {
+            width: 80%;
             padding: 50px 0;
-            display: flex;
-            align-items: center;
         }
 
-        .text-content {
-            flex: 1;
-            padding-right: 50px;
-            background-image: linear-gradient(180deg, transparent 29px, #e5d9c9 30px);
-            background-size: 100% 30px;
-            padding: 40px;
-        }
-
-        .page-title {
-            text-transform: uppercase;
-            color: #333;
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-        }
-
-        .section-title {
-            color: #0e52c1;
-            font-size: 3rem;
-            margin-bottom: 30px;
-        }
-
-        .org-name {
-            color: #f26342;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .description {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .mission {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .visual-content {
-            flex: 1;
-            position: relative;
-            height: 500px;
-        }
-
-        .decoration {
-            position: absolute;
-        }
-
-        .red-block {
-            background-color: #f26342;
-            width: 200px;
-            height: 180px;
-            border-radius: 20px;
-            top: 10%;
-            right: 30%;
-            z-index: 2;
-        }
-
-        .a-letter {
-            position: absolute;
-            color: white;
-            font-size: 120px;
-            font-weight: bold;
-            top: 20px;
-            left: 70px;
-        }
-
-        .yellow-blob {
-            background-color: #ffd966;
-            width: 250px;
-            height: 250px;
-            border-radius: 50% 60% 40% 70%;
-            top: 15%;
-            left: 10%;
-            z-index: 1;
-        }
-
-        .pink-note {
-            background-color: #ffb6c1;
-            width: 220px;
-            height: 200px;
-            border-radius: 20px;
-            transform: rotate(-5deg);
-            top: 45%;
-            left: 25%;
-            z-index: 3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Individual Slide (Member Card) */
+        .swiper-slide {
+            background: #f8f8f8;
             padding: 20px;
-        }
-
-        .note-text {
-            color: #f26342;
-            font-size: 1.5rem;
-            font-weight: bold;
+            border-radius: 10px;
             text-align: center;
-            line-height: 1.2;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .child-illustration {
-            position: absolute;
-            bottom: 20%;
-            left: 15%;
-            z-index: 4;
+        .swiper-slide:hover {
+            transform: scale(1.05);
         }
 
-        .child-photo {
-            position: absolute;
-            bottom: 0;
-            right: 10%;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            z-index: 5;
-        }
-
-        .child-photo img {
+        .swiper-slide img {
             width: 100%;
-            height: 100%;
+            height: 200px;
             object-fit: cover;
+            border-radius: 10px;
         }
 
-        .building-block {
-            position: absolute;
-            top: 20%;
-            right: 10%;
-            z-index: 4;
+        .swiper-slide h3 {
+            margin: 10px 0;
+            color: #004aad;
+        }
+
+        .swiper-slide p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Swiper Navigation */
+        .swiper-button-next, .swiper-button-prev {
+            color: #004aad;
+        }
+
+        .swiper-pagination {
+            position: relative;
+            bottom: -10px;
+        }
+
+        @media (max-width: 768px) {
+            .swiper {
+                width: 95%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container nav-container">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">What We Do</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-            
-            <div class="logo">
-                <img src="https://via.placeholder.com/50" alt="Watumull Logo">
-                <h1>Watumull</h1>
-                <p>CHILDREN'S EDUCATION</p>
+
+    <section class="board-section">
+        <h2>Our Amazing Board of Directors</h2>
+        <p class="board-description">
+            We have a diverse group of professionals who represent different age groups and ethnicities. They work to support the mission of our organization.
+        </p>
+
+        <!-- Swiper Carousel -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/asset/mountain.jpg" alt="Chitra Wright">
+                    <h3>CHITRA WRIGHT</h3>
+                    <p><strong>PRESIDENT</strong></p>
+                    <p>Chitra is a highly experienced teacher with 30 years in the field.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="asset/food-treats-svgrepo-com.svg" alt="Edward Leonard">
+                    <h3>EDWARD LEONARD, M.D.</h3>
+                    <p><strong>BOARD MEMBER</strong></p>
+                    <p>Ed specializes in infectious diseases and runs a clinic in Africa.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="asset/animal-butterflies-domestic-svgrepo-com.svg" alt="Dan Rullamas">
+                    <h3>DAN RULLAMAS, CPA</h3>
+                    <p><strong>TREASURER</strong></p>
+                    <p>Dan is a CPA with expertise in audits and financial planning.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/300" alt="New Member">
+                    <h3>NEW MEMBER</h3>
+                    <p><strong>BOARD MEMBER</strong></p>
+                    <p>Details about this new board member.</p>
+                </div>
             </div>
-            
-            <div>
-                <ul class="nav">
-                    <li><a href="#">Latest News</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Donate</a></li>
-                </ul>
-            </div>
-            
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">f</a>
-            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    </header>
-    
-    <main>
-        <div class="container main-content">
-            <div class="text-content">
-                <h2 class="page-title">About Us</h2>
-                
-                <h1 class="section-title">Who We Are</h1>
-                
-                <p class="description">
-                    <span class="org-name">Watumull Children's Education</span> is a young organization, 
-                    though it has been a vivid dream of its founder for many, 
-                    many years.
-                </p>
-                
-                <p class="mission">
-                    Our mission is to help needy children by providing resources 
-                    to their schools, offering them an education that can break 
-                    the cycle of poverty in their lives.
-                </p>
-            </div>
-            
-            <div class="visual-content">
-                <div class="decoration yellow-blob"></div>
-                
-                <div class="decoration red-block">
-                    <span class="a-letter">A</span>
-                </div>
-                
-                <div class="decoration pink-note">
-                    <p class="note-text">you are going places.</p>
-                </div>
-                
-                <svg class="decoration child-illustration" width="100" height="100" viewBox="0 0 100 100">
-                    <!-- Simple child illustration -->
-                    <circle cx="50" cy="30" r="20" fill="#000"/>
-                    <rect x="40" y="50" width="20" height="40" fill="#3366cc"/>
-                </svg>
-                
-                <div class="decoration building-block">
-                    <svg width="80" height="80" viewBox="0 0 80 80">
-                        <rect x="10" y="10" width="60" height="40" fill="#33cc33" />
-                        <polygon points="10,10 40,0 70,10" fill="#3399ff" />
-                    </svg>
-                </div>
-                
-                <div class="child-photo">
-                    <img src="https://via.placeholder.com/200" alt="Child smiling">
-                </div>
-            </div>
-        </div>
-    </main>
+    </section>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
 </body>
 </html>

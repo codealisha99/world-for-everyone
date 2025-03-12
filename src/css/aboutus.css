@@ -111,11 +111,138 @@
         #fff 0px,
         #fff 10px,
         #00408c 10px,
-        #00408c 25px
+        #00408c 35px
      );
 }
+.discription{
+    position: relative;
+    width: 90vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #00408c;
+    border-radius: 20px;
+}
+.img{
+    position: relative;
+    width: 45vw;
+    height: 85vh;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+}
+.wfe-family{
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.board-members{
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.subscribe-section{
+    margin: 0;
+    font-family: serif;
+    text-align: center;
+    background-color: rgb(205, 55, 55); 
+    color: white;
+    padding: 50px 20px;
+    height: 45vh;
+}
+.subscribe-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.subscribe-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+.subscribe-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 200px;
+    text-align: center;
+}
+
+.subscribe-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.subscribe-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+    background: white;
+    color: #e32020;
+}
   
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 200px;
+    text-align: center;
+}
+
+.subscribe-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.subscribe-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+    background: white;
+    color: #e32020;
+}
   
   
 
