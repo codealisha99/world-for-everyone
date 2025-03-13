@@ -25,6 +25,7 @@
     height: 21vh;
 
 
+
 }
 .container1{ 
     display: flex;
@@ -44,8 +45,8 @@
     display: flex;
     width: 50%;
     flex: 1;
-    background-color: #00408c;
-    color: white;
+    background-color: antiquewhite;
+    color: black;
     align-items: center;
     text-align: center;
     font-size: 16px;
@@ -111,7 +112,7 @@
         #fff 0px,
         #fff 10px,
         #00408c 10px,
-        #00408c 35px
+        #88befe 15px
      );
 }
 .discription{
