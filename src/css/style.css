@@ -527,11 +527,11 @@ justify-content: space-evenly;
     margin-bottom: 0;
    
   }
-  .trdpage{
+  
     
 
 
-  }
+  
   .first{
     width: 400px;
     height: 200px;
@@ -539,18 +539,100 @@ justify-content: space-evenly;
     background-color: white;
 
   }
-  .peers{
+  
+  .subscribe-section{
+    margin: 0;
+    font-family: serif;
+    text-align: center;
+    background-color: rgb(205, 55, 55); 
+    color: white;
+    padding: 50px 20px;
+    height: 45vh;
+}
+.subscribe-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.subscribe-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-  }
-  .sponsers{
+.subscribe-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 200px;
+    text-align: center;
+}
 
-  }
-  .connect-box{
-    height: 100px;
-    width: 100px;
-    background-color: orange;
+.subscribe-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
 
-  }
+.subscribe-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+    background: white;
+    color: #e32020;
+}
+  
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 200px;
+    text-align: center;
+}
+
+.subscribe-form input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.subscribe-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+    background: white;
+    color: #e32020;
+}
+  
   .footer231{
     display: flex;
     clear: both;
@@ -560,14 +642,14 @@ justify-content: space-evenly;
     height: 200px;
     justify-content: right;
     align-items: center;
-    margin-top: 0%;
+     margin-top: 0%; */
     opacity: 1;
   }
   .flower{
     background-image: url(/asset/crown-of-flowers-headdress-svgrepo-com.svg);
     background-repeat: repeat-x round;
     /* background-size: 50px; */
-    height: 70px;
+    height: 60px;
     width: 100vw;
     margin-bottom: -30px;
     position: relative;
@@ -581,7 +663,5 @@ justify-content: space-evenly;
   .pink{
     margin: 30px;
   }
-  .new-donate{
-
-  }
+  
   

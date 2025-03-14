@@ -130,24 +130,16 @@
 
 
         </div>
-        <div class="stay-connected">
-            <!-- first name last name email subscribe  -->
-            <h2>Stay connected</h2>
-             <h4>Join our mailing list to be the first to read our news and updates</h4> 
-             <!-- <div class="newsletter-form">
-                <h2 class="footer-heading">Stay Connected</h2>  -->
-             <!-- <p class="footer-description">Join our mailing list to be the first to read our news and updates.</p> -->
-            <form class="newsl-form"> 
-              <label for="firstName" class="visually-hidden">First Name</label>
-              <input type="text" id="firstName" placeholder="First Name" class="footer-input" required>
-              <label for="lastName" class="visually-hidden">Last Name</label>
-              <input type="text" id="lastName" placeholder="Last Name" class="footer-input" required>
-              <label for="email" class="visually-hidden">Email Address</label>
-              <input type="email" id="email" placeholder="Email Address" class="footer-input" required>
-              <button type="submit" class="footer-submit">Subscribe</button>
-            </form> 
-
-        </div>
+        <section class="subscribe-section">
+            <h2>Stay Connected</h2>
+            <p>Join our mailing list to be the first to read our news and updates.</p>
+            <form class="subscribe-form" onsubmit="return subscribeUser(event)">
+                <input type="text" placeholder="First Name" id="firstName" required>
+                <input type="text" placeholder="Last Name" id="lastName" required>
+                <input type="email" placeholder="Email Address" id="email" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </section>
       
        <footer class="footer">
         <div class="footer-container">

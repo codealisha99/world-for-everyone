@@ -107,6 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: #00408c 5px solid;
      background: repeating-linear-gradient(
         -45deg,
         #fff 0px,
@@ -118,7 +119,7 @@
 .discription{
     position: relative;
     width: 90vw;
-    height: 85vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +164,7 @@
 }
 .subscribe-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+     margin-bottom: 10px; 
 }
 .subscribe-section p {
     font-size: 1.2rem;

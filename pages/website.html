@@ -459,9 +459,17 @@
         <!-- a picture or a scrol  -->
     </div>
 
-    <div class="connect-box">
-        <p> connect us box</p>
-    </div>
+    <section class="subscribe-section">
+        <h2>Stay Connected</h2>
+        <p>Join our mailing list to be the first to read our news and updates.</p>
+        <form class="subscribe-form" onsubmit="return subscribeUser(event)">
+            <input type="text" placeholder="First Name" id="firstName" required>
+            <input type="text" placeholder="Last Name" id="lastName" required>
+            <input type="email" placeholder="Email Address" id="email" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+    </section>
+    
     <div class="flower">
         <!-- <img src="/asset/crown-of-flowers-headdress-svgrepo-com.svg"  alt=""> -->
     </div>
