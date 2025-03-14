@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>worldforeveryone</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $('.container-reviews').hover(function () {
                
@@ -27,7 +27,7 @@
                 $('.carousel').css('animation-play-state', 'running');
             });
         });
-    </script>
+    </script> -->
 
 <link href="https://cdn.prod.website-files.com/649e58a7bde586a93bf386b5/css/wishwell.webflow.648a0d0e6.css" rel="stylesheet" type="text/css"/>
         <script src="https://use.typekit.net/vca8gmy.js" type="text/javascript"></script>
@@ -44,11 +44,11 @@
                 ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
             }(window, document);
         </script>
-        <link href="https://cdn.prod.website-files.com/649e58a7bde586a93bf386b5/64da8edf48231c0393a5fe2e_Favicon%20(1).svg" rel="shortcut icon" type="image/x-icon"/>
-        <link href="https://cdn.prod.website-files.com/649e58a7bde586a93bf386b5/64da8f89b120c42078a9a96f_Favicon%203.svg" rel="apple-touch-icon"/>
+        <link href="/asset/icon--rainbow-star_800x.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="/asset/icon--rainbow-star_800x.png" rel="apple-touch-icon"/>
         <link href="https://www.wishwellcc.com/" rel="canonical"/>
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11311744636"></script>
+
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -193,15 +193,33 @@
 
 <body>
 
-    <div class="nav231">
-        <p>Home</p>
-        <p>What we do</p>
-        <br>
-        <a href="">About us</a>
-        <p>Drives</p>
-        <p>Contact</p>
-        <button class="donate">DONATE</button>
-    </div>
+    <nav class="navbar">
+        <ul class="nav-links left-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">WHAT WE DO</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
+
+        <div class="logo">
+            <a href="#">
+                <img src="/asset/icon--rainbow-star_800x.png" alt="wfe logo">
+            </a>
+        </div>
+
+        <ul class="nav-links right-links">
+            <li><a href="#">LATEST NEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="donate-btn" 
+                style="background-color: #ff0000; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease-in-out;"
+                onmouseover="this.style.backgroundColor='#cc0000'"
+                onmouseout="this.style.backgroundColor='#ff0000'">
+                DONATE
+             </a>
+             </li>
+            <!-- <a href="#" class="donate-btn" style="color:#fff; text-decoration: none;">DONATE</a> -->
+        </ul>
+        
+    </nav>
     <div class="hero231">
         <p style="font-family: blockhead-black-face , sans-serif;font-weight: 400;
         font-style: normal;

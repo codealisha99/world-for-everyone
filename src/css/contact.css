@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 :root {
-    --cream-color:   ;     /* Background color - you can adjust this */
+    --cream-color:  #F9E5C7 ;     /* Background color - you can adjust this */
    
   }
    body{
-    background: var(--cream-color);
+    background: var(#F9E5C7);
    
 .nav231{
     display: flex;
@@ -35,23 +35,23 @@
 }
 body{
     font-size: 12px;
+    
    
 }
 
 .container{
-    background:  #F9E5C7  ;
-    width: 500px;
-    /* padding: 20px; */
-    /* margin: 70px auto 0; */
-    /* margin-top: 5px; */
-    margin-right: 60px;
-    /* border: 5px solid;
-    border-style: solid; */
-    /* border-color: #00408c; */
-    justify-content: right;
+    position: relative;
     display: flex;
+    width: 50%;
+    background:  #F9E5C7  ;
+    width: 100%;
+   
+    margin-right: 60px;
+   
+    justify-content: right;
+    
     flex-direction: column;
-    /* align-items: center; */
+    
     float: right;
 
 }
@@ -136,20 +136,15 @@ body{
     text-align: center;
 }
 .submit-button {
-    background-color: transparent;
-    color: #00408c;
+    
+    background-color: #00408c ;
+   color: aliceblue;
     height: 35px;
     width: 95%;
-    border: 2px solid #00408c;
+   
     font-weight: bolder;
     cursor: pointer;
-    display: inline-block;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* transition: transform 0.3s ease-in-out;
-    transform-origin: center; */
-    /* margin-left: 0 auto ; */
-    /* text-align:center; */
+   
 }
 
 .submit-button:hover {
@@ -188,12 +183,13 @@ a{
 }
 .title{
     background: #F9E5C7;
-    display: inline-block;
-    justify-content: left;
+   
+    flex: 1;
+    justify-content: center;
     padding-top: 150px;
     margin-left: 50px;
     font-size: xx-large;
-    width: 400px;
+   
      
     
     
@@ -231,6 +227,10 @@ a{
         color: white;
         cursor: pointer;
         
+        
+    }
+    .our-services:hover {
+            text-decoration: underline purple;
     }
     
     .involvement {

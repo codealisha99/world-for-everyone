@@ -3,159 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board of Directors</title>
-
-    <!-- Swiper.js CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <title>Watumull Navbar</title>
     <style>
-        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        .board-section {
-            padding: 50px 20px;
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 19vh;
+    background-color: #002f87;
+}
 
-        .board-section h2 {
-            font-size: 2rem;
-        }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
 
-        .board-description {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            text-align: left;
-        }
+.nav-links li {
+    display: inline;
+}
 
-        /* Swiper Container */
-        .swiper {
-            width: 80%;
-            padding: 50px 0;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Blue color like in the image */
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        /* Individual Slide (Member Card) */
-        .swiper-slide {
-            background: #f8f8f8;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
+.nav-links a:hover {
+    color: lightblue; /* Change color on hover */
+    text-decoration: underline lightblue;
+}
 
-        .swiper-slide:hover {
-            transform: scale(1.05);
-        }
+.donate-btn {
+    background-color: #ff0000; /* Red color for Donate */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
 
-        .swiper-slide img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+/* Centering the logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-        .swiper-slide h3 {
-            margin: 10px 0;
-            color: #004aad;
-        }
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
 
-        .swiper-slide p {
-            font-size: 0.9rem;
-            color: #555;
-        }
+/* Ensuring nav links stay properly aligned */
+.left-links {
+    margin-right: auto;
+}
 
-        /* Swiper Navigation */
-        .swiper-button-next, .swiper-button-prev {
-            color: #004aad;
-        }
+.right-links {
+    margin-left: auto;
+}
 
-        .swiper-pagination {
-            position: relative;
-            bottom: -10px;
-        }
-
-        @media (max-width: 768px) {
-            .swiper {
-                width: 95%;
-            }
-        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="nav-links left-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">WHAT WE DO</a></li>
+            <li><a href="#">ABOUT US</a></li>
+        </ul>
 
-    <section class="board-section">
-        <h2>Our Amazing Board of Directors</h2>
-        <p class="board-description">
-            We have a diverse group of professionals who represent different age groups and ethnicities. They work to support the mission of our organization.
-        </p>
-
-        <!-- Swiper Carousel -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/asset/mountain.jpg" alt="Chitra Wright">
-                    <h3>CHITRA WRIGHT</h3>
-                    <p><strong>PRESIDENT</strong></p>
-                    <p>Chitra is a highly experienced teacher with 30 years in the field.</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="asset/food-treats-svgrepo-com.svg" alt="Edward Leonard">
-                    <h3>EDWARD LEONARD, M.D.</h3>
-                    <p><strong>BOARD MEMBER</strong></p>
-                    <p>Ed specializes in infectious diseases and runs a clinic in Africa.</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="asset/animal-butterflies-domestic-svgrepo-com.svg" alt="Dan Rullamas">
-                    <h3>DAN RULLAMAS, CPA</h3>
-                    <p><strong>TREASURER</strong></p>
-                    <p>Dan is a CPA with expertise in audits and financial planning.</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="https://via.placeholder.com/300" alt="New Member">
-                    <h3>NEW MEMBER</h3>
-                    <p><strong>BOARD MEMBER</strong></p>
-                    <p>Details about this new board member.</p>
-                </div>
-            </div>
-
-            <!-- Navigation Buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+        <div class="logo">
+            <a href="#">
+                <img src="/asset/icon--rainbow-star_800x.png" alt="wfe logo">
+            </a>
         </div>
-    </section>
 
-    <!-- Swiper.js Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
-            }
-        });
-    </script>
-
+        <ul class="nav-links right-links">
+            <li><a href="#">LATEST NEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="donate-btn" 
+                style="background-color: #ff0000; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease-in-out;"
+                onmouseover="this.style.backgroundColor='#cc0000'"
+                onmouseout="this.style.backgroundColor='#ff0000'">
+                DONATE
+             </a>
+             </li>
+            <!-- <a href="#" class="donate-btn" style="color:#fff; text-decoration: none;">DONATE</a> -->
+        </ul>
+        
+    </nav>
 </body>
 </html>
