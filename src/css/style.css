@@ -234,6 +234,17 @@ svg:not(:root) {
   object-fit: cover; /* Ensures the image covers the entire section */
 }
 
+.yellow-section{
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.yellow-section h1{
+  font-size: 36px;
+  color: #002f87;
+  margin-bottom: 30px;
+}
 
 .three-card {
   font-family: Arial, sans-serif;
@@ -273,25 +284,34 @@ svg:not(:root) {
   color: #000;
 }
 
-.threecard p {
+.three-card p {
   font-size: 14px;
   color: #333;
 }
 
-.three-card a {
-  display: block;
-  margin-top: 10px;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
+
+  .services-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-card:hover {
-  text-decoration: underline;
+.services-button:hover {
+    background-color: #cc0000;
 }
+
+
+
 
 @media (max-width: 768px) {
-  .container {
+  .yellow-section {
       flex-direction: column;
       align-items: center;
   }
@@ -496,6 +516,7 @@ footer {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: start;
     gap: 10px;
     flex-direction: column;
     padding-left: 30px;
@@ -518,6 +539,48 @@ footer {
 
 .social-icons a:hover {
   color: #fff;
+}
+.involved-giveaway-container{
+  display: flex;
+  height: 50vh;
+  
+  max-width: 100%;
+  background: white;
+  overflow: hidden;
+  
+}
+.involved{
+  display: flex;
+  width: 50%;
+  flex: 1;
+  background-color: rgb(211, 66, 90);
+  color: black;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.involved p{
+  margin: 0;
+
+}
+.give-away{
+  display: flex;
+  width: 50%;
+  flex: 1;
+  background-color: orange;
+  color: black;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.give-away p{
+  margin: 0;
 }
 
 
