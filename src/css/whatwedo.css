@@ -64,6 +64,76 @@ body {
 .right-links {
     margin-left: auto;
 }
+.hero {
+    background: url('hero.jpg') no-repeat center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 4rem;
+}
+.wave {
+    width: 100%;
+    height: 100px;
+    background: #ff0;
+    clip-path: ellipse(50% 20% at 50% 50%);
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    background: #008000;
+    color: white;
+    padding: 50px 0;
+}
+.service-card {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Mission Section */
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    background: #f5f5f5;
+}
+.mission-text {
+    max-width: 50%;
+}
+.mission-text h2 {
+    color: #007bff;
+}
+.mission-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Locations Section */
+.locations {
+    text-align: center;
+    padding: 50px;
+    background: #eaf0f6;
+}
+.locations h2 {
+    color: #007bff;
+    font-size: 2rem;
+}
+.locations p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

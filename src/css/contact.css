@@ -306,7 +306,7 @@ a{
         background-color: #f8f8f8;
     }
     
-    footer {
+    .footer {
        background-color: #002f87;
         padding: 40px 0;
         color: #fcfcfc;
@@ -372,8 +372,8 @@ a{
     }
     
     .social-icons a:hover {
-      color: #fff;
-    }
+        color: #fff;
+      }
     
     .subscribe-section{
         margin: 0;
