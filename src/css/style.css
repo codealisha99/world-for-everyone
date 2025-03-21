@@ -10,7 +10,7 @@
   --line-height: 24px;        /* Space between lines - you can adjust this */
 }
 
-.help-carousel {
+/* .help-carousel {
   background-color: var(--cream-color);
   background-image: repeating-linear-gradient(
     transparent 0px,
@@ -29,7 +29,7 @@
     var(--line-color) var(--line-height)
   );
   background-size: 100% var(--line-height);
-}
+} */
 html{
     background-color: white;
     overflow-x: hidden;
@@ -79,13 +79,40 @@ html{
   text-decoration: underline lightblue;
 }
 
-.donate-btn {
-  background-color: #ff0000; 
-  color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
+.whatwedo-btn {
+  background: linear-gradient(145deg, #e74c3c, #c0392b);
+            color: #fff;
+            font-size: 24px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 12px ;
+            cursor: pointer;
+            box-shadow: 0 8px 0 #a93226, 0 15px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            /* display: inline-block;
+            padding: 20px 50px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background: #E74C3C; 
+            /* text-decoration: none;
+            border-radius: 1px; 
+            transition: transform 0.3s, box-shadow 0.3s; 
+            box-shadow: 0 8px 16px rgba(174, 15, 15, 0.2); */ 
+}
+.whatwedo-btn:hover {
+  /* transform: translateY(-5px);
+  
+  cursor: pointer; */
+  transform: translateY(-5px);
+            box-shadow: 0 12px 0 #922b21, 0 20px 25px rgba(0, 0, 0, 0.4);
 }
 
+.whatwedo-btn:active {
+  /* transform: translateY(2px); */
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #7b241c, 0 10px 15px rgba(0, 0, 0, 0.5);
+}
 
 .logo {
   position: absolute;
@@ -356,7 +383,7 @@ svg:not(:root) {
     margin: 0;
     font-family: serif;
     text-align: center;
-    background-color: rgb(227, 200, 79); 
+    background-color: #F16A43; 
     color: white;
     padding: 50px 20px;
     height: 45vh;
