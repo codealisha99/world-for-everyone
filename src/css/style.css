@@ -80,7 +80,7 @@ html{
 }
 
 .whatwedo-btn {
-  background: linear-gradient(145deg, #e74c3c, #c0392b);
+            background: linear-gradient(145deg, #e74c3c, #c0392b);
             color: #fff;
             font-size: 24px;
             padding: 15px 40px;
@@ -89,23 +89,14 @@ html{
             cursor: pointer;
             box-shadow: 0 8px 0 #a93226, 0 15px 20px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
-            /* display: inline-block;
-            padding: 20px 50px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
-            background: #E74C3C; 
-            /* text-decoration: none;
-            border-radius: 1px; 
-            transition: transform 0.3s, box-shadow 0.3s; 
-            box-shadow: 0 8px 16px rgba(174, 15, 15, 0.2); */ 
+            
 }
 .whatwedo-btn:hover {
   /* transform: translateY(-5px);
   
   cursor: pointer; */
   transform: translateY(-5px);
-            box-shadow: 0 12px 0 #922b21, 0 20px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 0 #922b21, 0 20px 25px rgba(0, 0, 0, 0.4);
 }
 
 .whatwedo-btn:active {
@@ -136,7 +127,7 @@ html{
 .hero231{
     width: 100%;
     height: 100vh;
-     margin-top: 30px; 
+    
      margin-bottom: 40px; 
     font-family: "gooddog-new", sans-serif; 
     font-style: normal; 
@@ -362,8 +353,8 @@ svg:not(:root) {
     font-size: 1.8rem;
     margin: 0;
     margin-bottom: 0;
-    background-color: #CBDCEB;
-    color: #133E87;
+    background-color: #608BC1;
+    color: white;
   }
   .contact-us h1{
     margin-left: 50px;
@@ -486,89 +477,99 @@ svg:not(:root) {
     position: relative;
 
   }
-  /* .flower img{
-    display: none;
-    z-index: -4;
-    size: 50px;
-  } */
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
-
-footer {
-   background-color: #133E87;
-    padding: 40px 0;
+ 
+ 
+  footer {
+    background-color: #133E87;
     color: #F3F3E0;
-}
-
-.footer-container {
+     padding: 40px 20px; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.footer-section {
+  }
+  
+  .footer-left, .footer-links, .footer-contact {
     flex: 1;
-    min-width: 200px;
-    padding: 10px;
-}
-
-.footer-section h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
+    margin: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-left h2 {
+    font-size: 24px;
+    color: #608BC1;
+  }
+  
+  .footer-left p {
+    line-height: 1.6;
+  }
+  
+  .social-icons{
+    margin-top: 10px;
+  }
+  .social-icons a {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s;
+    
+  }
+  
+  .social-icons a:hover {
+    color: lightblue; 
+    text-decoration: underline lightblue;
+  }
+  
+  
+  .footer-links h3, .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
     list-style: none;
     padding: 0;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section ul li a {
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links ul li a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: lightblue; 
+    text-decoration: underline lightblue;
+  }
+  
+  .footer-contact p {
+    margin: 10px 0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 30px 0;
+    max-width: 100%;
     font-size: 14px;
-}
+    background: #133E87;
+    
+  }
+  .footer-bottom p {
+    margin: 10px;
+  }
+  
+  
+  
 
-.logo-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-    flex-direction: column;
-    padding-left: 30px;
-}
-
-.logof {
-    width: 60px;
-}
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-  color: #fff;
-}
 .involved-giveaway-container{
   display: flex;
   height: 50vh;
