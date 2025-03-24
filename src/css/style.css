@@ -347,7 +347,7 @@ svg:not(:root) {
   .contact-us{
     display: flex;
     height: 70vh;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     line-height: 3.5rem;
     font-size: 1.8rem;
@@ -355,11 +355,18 @@ svg:not(:root) {
     margin-bottom: 0;
     background-color: #608BC1;
     color: white;
+
   }
   .contact-us h1{
-    margin-left: 50px;
+   padding-left: 150px;
+
   }
-  
+  .contact-us p{
+    padding-left: 150px;
+  }
+  .contact-us button{
+    padding-left: 150px;
+  }
     
 
 
@@ -380,6 +387,7 @@ svg:not(:root) {
     color: white;
     padding: 50px 20px;
     height: 45vh;
+    align-items: center;
 }
 .subscribe-section h2 {
     font-size: 2.5rem;
@@ -498,11 +506,12 @@ svg:not(:root) {
     flex: 1;
     margin: 20px;
     min-width: 250px;
+    
   }
   
   .footer-left h2 {
     font-size: 24px;
-    color: #608BC1;
+    color: rgb(222, 97, 97);
   }
   
   .footer-left p {
