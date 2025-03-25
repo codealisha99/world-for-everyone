@@ -1,143 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watumull Navbar</title>
-    <style>
-        body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Sections with Buttons</title>
+<link rel="stylesheet" href="test.css">
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-    padding: 15px 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 19vh;
-    background-color: #002f87;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white; /* Blue color like in the image */
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: lightblue; /* Change color on hover */
-    text-decoration: underline lightblue;
-}
-
-.donate-btn {
-    background-color: #ff0000; /* Red color for Donate */
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-/* Centering the logo */
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.logo img {
-    height: 50px; /* Adjust as needed */
-}
-
-/* Ensuring nav links stay properly aligned */
-.left-links {
-    margin-right: auto;
-}
-
-.right-links {
-    margin-left: auto;
-}
-
-    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-links left-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">WHAT WE DO</a></li>
-            <li><a href="#">ABOUT US</a></li>
-        </ul>
 
-        <div class="logo">
-            <a href="#">
-                <img src="/asset/icon--rainbow-star_800x.png" alt="wfe logo">
-            </a>
-        </div>
+<div class="container">
+  <div class="section red">
+    <button class="custom-btn">Donate</button>
+  </div>
+  <div class="section orange">
+    <button class="custom-btn">Get Involved</button>
+  </div>
+  <div class="section yellow">
+    <button class="custom-btn">Give Away</button>
+  </div>
+</div>
 
-        <ul class="nav-links right-links">
-            <li><a href="#">LATEST NEWS</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#" class="donate-btn" 
-                style="background-color: #ff0000; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease-in-out;"
-                onmouseover="this.style.backgroundColor='#cc0000'"
-                onmouseout="this.style.backgroundColor='#ff0000'">
-                DONATE
-             </a>
-             </li>
-            <!-- <a href="#" class="donate-btn" style="color:#fff; text-decoration: none;">DONATE</a> -->
-        </ul>
-        
-    </nav>
 </body>
 </html>
-
-
-
-
-<!-- <div style="margin-left: -50px;" class="container-path">
-        <svg width="110%" height="auto" viewBox="0 0 1098.72 114.55">
-            <path id="outerCurve" fill="transparent" stroke="#E9D866" stroke-width="40"
-                d="M0.17,110.23c0,0,105.85,-77.7,276.46,-73.2s243.8,61.37,408.77,54.05c172.09,-7.64,213.4,-92.34,413.28,-64.19">
-            </path>
-            <path id="innerCurve" fill="transparent" stroke="#191970" stroke-width="30"
-                d="M0.17,110.23c0,0,105.85,-77.7,276.46,-73.2s243.8,61.37,408.77,54.05c172.09,-7.64,213.4,-92.34,413.28,-64.19">
-            </path>
-            <text id="text" width="100%" dy="4"
-                style="transform:translate3d(0,0,0); font-family: Eightiescomeback Smbdxcn, sans-serif;">
-                <textPath id="text-path-1" style="transform:translate3d(0,0,0);" alignment-baseline="middle"
-                    xlink:href="#innerCurve" startOffset="0">WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE
-                    ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO
-                    WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE *
-                    WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE
-                    ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * WHO
-                    WE ARE * WHO WE ARE * WHO WE ARE * WHO WE ARE * </textPath>
-            </text>
-        </svg>
-    </div>
-    <script>
-        const textPath1 = document.querySelector("#text-path-1");
-
-        let offset = 0;
-
-        const animate = () => {
-            offset = (offset + 1) % 1200;
-            textPath1.setAttribute("startOffset", -offset);
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-    </script> -->
