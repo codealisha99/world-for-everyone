@@ -261,7 +261,8 @@ svg:not(:root) {
 .yellow-section h1{
   font-size: 36px;
   color: #002f87;
-  margin-bottom: 30px;
+  background-color: #f1c664;
+  padding-top: 20px;
 }
 
 .three-card {
@@ -308,10 +309,10 @@ svg:not(:root) {
 }
 
 
- .three-card:hover {
+ /* .three-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(174, 15, 15, 0.2);
-}
+} */
 
 
 
@@ -579,48 +580,7 @@ svg:not(:root) {
   
   
 
-.involved-giveaway-container{
-  display: flex;
-  height: 50vh;
-  
-  max-width: 100%;
-  background: white;
-  overflow: hidden;
-  
-}
-.involved{
-  display: flex;
-  width: 50%;
-  flex: 1;
-  background-color: rgb(211, 66, 90);
-  color: black;
-  align-items: center;
-  text-align: center;
-  font-size: 16px;
-  padding: 20px;
-  justify-content: center;
-  flex-direction: column;
-}
-.involved p{
-  margin: 0;
 
-}
-.give-away{
-  display: flex;
-  width: 50%;
-  flex: 1;
-  background-color: orange;
-  color: black;
-  align-items: center;
-  text-align: center;
-  font-size: 16px;
-  padding: 20px;
-  justify-content: center;
-  flex-direction: column;
-}
-.give-away p{
-  margin: 0;
-}
 
 
 
@@ -646,32 +606,18 @@ svg:not(:root) {
 }
 
 .red {
-  background: #FF0000;
+  background: #E52020;
 }
 
 .orange {
-  background: #FF8C00;
+  background: #FBA518;
 }
 
 .yellow {
-  background: #FFD700;
+  background: #A89C29;
 }
 
-/* .custom-btn {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 15px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.custom-btn:hover {
-  background: white;
-  color: #333;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-} */
 .content {
   display: flex;
   flex-direction: column;
@@ -683,12 +629,14 @@ svg:not(:root) {
 h2 {
   font-size: 28px;
   margin-bottom: 10px;
+  color: white;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
+  color: white;
 }
 
 .custom-btn {
