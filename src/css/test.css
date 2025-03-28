@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -59,4 +59,155 @@
     color: #333;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
-  
+   */
+
+
+
+   /* boooooooxxxxx
+   
+   
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.image-wrapper {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20% 50% 30% 40%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.text h2 {
+    color: #007BFF;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.text.story h3 {
+    color: #007BFF;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.text .highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.divider img {
+    width: 120px;
+}
+
+.caption {
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    top: -30px;
+    left: 20px;
+    font-style: italic;
+}
+
+/* Four Boxes Styling */
+/* .box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: calc(25% - 20px);
+  background: #007BFF;
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+/* @media screen and (max-width: 768px) {
+  .section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .image-wrapper img {
+      max-width: 300px;
+  }
+
+  .box-container {
+      flex-direction: column;
+  }
+
+  .box {
+      min-width: 100%;
+  }
+} */
+*/ */
