@@ -87,7 +87,7 @@ body {
 .services {
     display: flex;
     justify-content: space-around;
-    background: #008000;
+    background: #EB5B00;
     color: white;
     padding: 50px 0;
 }
@@ -211,7 +211,7 @@ h1 {
      align-items: center;
      justify-content: space-between;
      padding: 100px;
-     background: #002f87;
+     background: #3498db ;
 }
 
 .image-container img {

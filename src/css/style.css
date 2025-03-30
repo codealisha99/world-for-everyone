@@ -346,28 +346,96 @@ svg:not(:root) {
    
   }
   .contact-us{
+    position: relative;
+    width: 100%;
+    background-color: #5f89c5;
+    color: white;
+    text-align: left;
+    padding: 50px;
+    border: 10px solid white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 70vh;
-    justify-content: flex-start;
+    /* display: flex;
+    height: 70vh;
+    justify-content: center;
     align-items: center;
     line-height: 3.5rem;
     font-size: 1.8rem;
     margin: 0;
     margin-bottom: 0;
     background-color: #608BC1;
-    color: white;
+    color: white; */
 
   }
-  .contact-us h1{
+  .main-page-contact-us h1{
    padding-left: 150px;
+   font-size: 4rem;
 
   }
-  .contact-us p{
+  .main-page-contact-us p{
     padding-left: 150px;
+    font-size: 1rem;
   }
-  .contact-us button{
-    padding-left: 150px;
+  
+  .main-page-contact-us{
+    
+      max-width: 50%;
   }
+  .contact-button{
+    background-color: #EB5B00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            /* border-radius: 5px; */
+            margin-top: 20px;
+            transition: 0.3s;
+            margin-left: 150px;
+  }
+  .contact-button:hover {
+    background-color: rgb(249, 226, 21);
+}
+.png-image {
+  position: absolute;   /* Absolute positioning */
+  right: 20px;          /* Positioned on the right */
+  top: 50%;
+  transform: translateY(-50%);  /* Center vertically */
+  max-width: 400px;     /* Set max width */
+  height: auto;         /* Maintain aspect ratio */
+  z-index: 1;           /* Below the content */
+  opacity: 0.9;         /* Slight transparency */
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.png-image:hover {
+  transform: translateY(-50%) scale(1.05);  /* Slight zoom on hover */
+  opacity: 1;  /* Fully visible */
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .content {
+      max-width: 100%;
+      text-align: center;
+      z-index: 2;
+  }
+
+  .png-image {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      transform: none;
+      right: 0;
+      top: 0;
+  }
+}
     
 
 

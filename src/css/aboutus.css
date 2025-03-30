@@ -132,9 +132,9 @@ body {
 .emotions {
     position: absolute;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1rem;
     font-family: serif;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 .emotion:hover {
@@ -193,25 +193,27 @@ body {
 
 
 
-.container-board-members{
+/* Container Styling */
+.container-board-members {
     max-width: 100%;
     margin: 0 auto;
     background: #608BC1;
-    padding: 40px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    height: 200vh;
+    padding: 60px 40px;    /* Increased padding for better spacing */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);  /* Slightly darker shadow */
+    border-radius: 12px;    /* Smoother rounded edges */
 }
 
+/* Heading */
 .heading {
     text-align: center;
-    font-size: 36px;
+    font-size: 42px;        /* Slightly larger for emphasis */
     color: #0056b3;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
-
+/* Carousel Wrapper */
 .carousel-wrapper {
     display: flex;
     align-items: center;
@@ -220,7 +222,7 @@ body {
     overflow: hidden;
 }
 
-/* Carousel Track */
+/* Carousel */
 .carousel {
     overflow: hidden;
     width: 100%;
@@ -231,32 +233,43 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-
+/* Individual Cards */
 .card {
     flex: 0 0 calc(33.33% - 20px);
-    margin: 0 10px;
+    margin: 0 15px;         /* Slightly wider margin for even spacing */
     box-sizing: border-box;
-    background: #608BC1;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    background: #ffffff;    /* White background for contrast */
+    border-radius: 12px;     /* Rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Images */
 .card img {
     width: 100%;
-    max-height: 220px;
+    max-height: 240px;     /* Slightly larger for consistency */
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    border-radius: 12px;    /* Rounded image corners */
+    margin-bottom: 20px;
 }
 
+/* Card Title */
 .card h2 {
-    font-size: 22px;
+    font-size: 26px;       /* Slightly larger text */
     color: #0056b3;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
+/* Card Description */
 .card p {
     font-size: 18px;
     color: #555;
@@ -267,45 +280,88 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 20px;             /* More space between icons */
+    margin-top: 20px;
 }
 
 .social-links a {
     text-decoration: none;
-    color: #0077b5; 
-    font-size: 16px;
-    transition: color 0.3s;
+    font-size: 28px;       /* Larger icons */
+    transition: transform 0.3s ease, color 0.3s;
+    color: #0077b5;       /* Default LinkedIn color */
 }
 
+/* Icon Colors */
 .social-links a:hover {
-    color: #ff4d4d;
+    color: #ff4d4d;        /* Red on hover */
+    transform: scale(1.2);  /* Slight zoom effect */
 }
 
-
+/* Navigation Buttons */
 .prev, .next {
-    background: #0056b3;
-    color: black;
+    color: #ffffff;
+    background: #0056b3;   /* Button background color */
     border: none;
-    font-size: 24px;
+    font-size: 32px;       /* Larger navigation arrows */
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 15px 25px;
     transition: 0.3s;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover Effect for Navigation Buttons */
 .prev:hover, .next:hover {
-    background: #ff4d4d;
+    background: #133E87;
+    transform: scale(1.1); /* Slightly larger on hover */
 }
 
+/* Navigation Button Position */
 .prev {
-    left: 10px;
+    left: 20px;
 }
 
 .next {
-    right: 10px;
+    right: 20px;
+}
+
+/* Smooth Navigation */
+.carousel-track {
+    transition: transform 0.7s ease-in-out; 
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 20px); /* Show 2 cards on smaller screens */
+    }
+
+    .prev, .next {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .social-links a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 0 0 calc(100% - 20px); /* Single card on very small screens */
+    }
+
+    .social-links a {
+        font-size: 22px;
+    }
+
+    .prev, .next {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
 }
 
 .subscribe-section{
@@ -495,4 +551,14 @@ footer {
   .footer-bottom p {
     margin: 10px;
   }
-  
+  .flower{
+    background-image: url(/asset/crown-of-flowers-headdress-svgrepo-com.svg);
+    background-repeat: repeat-x round;
+    /* background-size: 50px; */
+    height: 60px;
+    width: 100vw;
+    margin-bottom: -30px;
+    margin-top: -25px;
+    position: relative;
+
+  }
